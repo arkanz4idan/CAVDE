@@ -13,3 +13,5 @@ wheels/
 checkpoints/*.pt
 models/*.pt
 
+# Datasets
+*.jsonl
