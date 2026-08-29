@@ -1,0 +1,15 @@
+[package]
+name = "txt2jsonl"
+version = "0.2.0"
+edition = "2021"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Maximum performance release profile
+[profile.release]
+opt-level = 3
+lto = "fat"             # Link Time Optimization across all crates
+codegen-units = 1       # Slows compilation, but maximizes runtime speed
+strip = true            # Removes debug symbols, reducing binary size
