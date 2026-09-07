@@ -47,7 +47,7 @@ def create_dataloader(
 
     )
 
-def create_tokenizer(dataset_path: str | Path = "datasets/chat.txt") -> SimpleTokenizer:
+def create_tokenizer(dataset_path: str | Path = "datasets/ai.jsonl") -> SimpleTokenizer:
     """
     Build vocabulary from dataset and create tokenizer.
     """
