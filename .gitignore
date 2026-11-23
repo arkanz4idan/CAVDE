@@ -1,0 +1,43 @@
+﻿# Rust / Cargo build artifacts
+/target/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+/logs/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python tooling artifacts (legacy helpers)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+build/
+dist/
+wheels/
+*.egg-info/
+
+# CAVDE trained models and checkpoints
+/checkpoints/
+/models/
+
+# Local / generated datasets
+*.jsonl
+/data/data.txt
+/data/vocab.txt
+
+# Local runtime memory
+/memory/

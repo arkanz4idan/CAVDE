@@ -1,0 +1,28 @@
+[package]
+name = "cavde"
+version = "0.1.0"
+edition = "2024"
+description = "CAVDE AI Framework (Rust port)"
+
+[features]
+default = ["backend-wgpu"]
+backend-wgpu = ["burn/wgpu"]
+backend-cuda = ["burn/cuda"]
+backend-flex = ["burn/flex"]
+
+[dependencies]
+anyhow = "1"
+burn = { version = "0.22", default-features = false, features = ["std", "autodiff", "optim"] }
+clap = { version = "4", features = ["derive"] }
+log = "0.4"
+env_logger = "0.11"
+rand = "0.9"
+regex = "1"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+serde_yaml = "0.9"
+thiserror = "2"
+unicode-normalization = "0.1"
+
+[dev-dependencies]
+tempfile = "3"
