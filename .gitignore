@@ -35,9 +35,9 @@ wheels/
 /models/
 
 # Local / generated datasets
-*.jsonl
 /data/data.txt
 /data/vocab.txt
 
 # Local runtime memory
 /memory/
+
